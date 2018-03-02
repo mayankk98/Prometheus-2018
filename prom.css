@@ -1,0 +1,21 @@
+body
+{
+	background-color: #ff9f80;
+}
+
+h2
+{
+	font-family: 'Fontdiner Swanky', cursive;
+}
+
+p
+{
+	font-family: 'Fondamento', cursive;
+}
+
+section
+{
+	color: #4d2d00;
+	text-align: center;
+	padding: 100px;
+}
