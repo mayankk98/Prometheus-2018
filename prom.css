@@ -165,7 +165,7 @@ html, body {
  grid-column: 1 / 4;
 }
 
-.center {
+.center-event {
  text-align: center;
  font-size: 3em;
 }
