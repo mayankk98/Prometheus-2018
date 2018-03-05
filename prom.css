@@ -239,6 +239,11 @@ width:80%;
 	padding:10px;
 	border  : 3px ;
 	box-sizing: border-box;
+	object-fit: cover;
+	overflow:hidden;
+	/*background-size:cover;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;*/
 }
 }
 .touchgallery{
