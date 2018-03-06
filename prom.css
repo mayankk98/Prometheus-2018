@@ -1,3 +1,5 @@
+/***************** General *****************/
+
 * {
 	box-sizing: border-box;
 }
@@ -8,6 +10,14 @@ html, body {
 	background-color: #ff9f80;
 }
 
+/***************** Sections *****************/
+
+section {
+	font-family: 'Uncial Antiqua', cursive;
+	color: #4d2d00;
+	text-align: center;
+}
+
 #landing {}
 
 #about {}
@@ -16,11 +26,8 @@ html, body {
 
 #contact {}
 
-section {
-	font-family: 'Uncial Antiqua', cursive;
-	color: #4d2d00;
-	text-align: center;
-}
+
+/***************** Gallery *****************/
 
 #gallery {
 	font-family: Verdana, sans-serif;
@@ -277,6 +284,8 @@ section {
 	}
 }
 
+/***************** Event Banners *****************/
+
 .touchgallery {
 	position: relative;
 	overflow: hidden;
@@ -302,7 +311,7 @@ section {
 	height: 100vh;
 	float: left;
 	display: grid;
-	grid-template-rows: 4em 1fr 5em;
+	grid-template-rows: 4em 1fr 10em;
 	grid-template-columns: 4em 1fr 4em;
 }
 
@@ -347,6 +356,8 @@ section {
 .logo-container {
 	margin-top: 3em;
 }
+
+/***************** Nav Bar *****************/
 
 .Nav {
 	position: fixed;
