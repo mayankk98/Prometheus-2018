@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -16,10 +20,6 @@ section {
 	font-family: 'Uncial Antiqua', cursive;
 	color: #4d2d00;
 	text-align: center;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 #gallery {
@@ -325,9 +325,27 @@ section {
 	grid-column: 1 / 4;
 }
 
-.center-event {
+.banner-content {
+	margin-top: 3em;
+}
+
+.event-title {
 	text-align: center;
-	font-size: 3em;
+	font-size: 5em;
+}
+
+.square {
+	position: relative;
+	width: 50%;
+}
+
+.square:after {
+	content: "";
+	display: block;
+}
+
+.logo-container {
+	margin-top: 3em;
 }
 
 .Nav {
