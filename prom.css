@@ -286,76 +286,49 @@ section {
 }
 
 /***************** Event Banners *****************/
+*{
+  min-height: 0;
+  min-width: 0;
+}
 
-.touchgallery {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
+.event {
 	height: 100vh;
-	background: #eee;
+	margin: 0 30px;
+  display: grid !important;
+  grid-template-rows: 4em 1fr 15%;
+  grid-template-columns: 4em 1fr 4em;
 }
 
-.touchgallery ul {
-	height: 100vh;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	position: absolute;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	transition: all 100ms ease-in-out;
+.b-top-left {
+  background-color: red;
 }
 
-.touchgallery ul li {
-	width: 100vw;
-	height: 100vh;
-	float: left;
-	display: grid;
-	grid-template-rows: 4em 1fr 10em;
-	grid-template-columns: 4em 1fr 4em;
+.b-top {
+	background-image: url("celtic-knot-top.svg");
+	background-repeat: round no-repeat;
 }
 
-.top {
-	background-image: url("celtic-knot-top.svg")
+.b-top-right {
+  background-color: blue;
 }
 
-.left {
-	background-image: url("celtic-knot-side.svg");
-	background-size: contain;
-	background-repeat: no-repeat round;
-}
-
-.right {
+.b-left {
 	background-image: url("celtic-knot-side.svg");
 	background-repeat: no-repeat round;
 }
 
-.bottom {
-	grid-column: 1 / 4;
+.b-right {
+	background-image: url("celtic-knot-side.svg");
+	background-repeat: no-repeat round;
 }
 
-.banner-content {
-	margin-top: 3em;
+.b-bottom {
+  grid-column: 1 / 4;
+  background-color: darkslateblue;
 }
 
-.event-title {
-	text-align: center;
-	font-size: 5em;
-}
-
-.square {
-	position: relative;
-	width: 50%;
-}
-
-.square:after {
-	content: "";
-	display: block;
-}
-
-.logo-container {
-	margin-top: 3em;
+.b-content {
+  font-size: 3em;
 }
 
 /***************** Nav Bar *****************/
