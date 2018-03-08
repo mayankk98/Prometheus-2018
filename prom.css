@@ -56,6 +56,7 @@ section {
 /***************** Gallery *****************/
 
 #gallery {
+	height: 500px;;
 	font-family: Verdana, sans-serif;
 	background-image: url("backgal.jpg");
 	border-radius: 5px;
