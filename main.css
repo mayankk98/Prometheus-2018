@@ -1,0 +1,136 @@
+h1, h2, h3 {
+	font-family: 'Cinzel', cursive;
+	color: white;
+}
+
+p, a, li {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+html {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background-image: url("body red copy.jpg");
+	height: 100%;
+	margin: 0;
+}
+
+.cracks {
+	background-image: url("top red.jpg");
+	height: 200px;
+}
+
+.break {
+	background-image: url("break copy red dark.jpg");
+	height: 52px;
+}
+
+.cracksBottom {
+	background-image: url("crackbottomred.jpg");
+	height: 200px;
+	width: 100%;
+	background-repeat: repeat-x;
+	margin-top: -75px;
+}
+
+.smallbreak {
+	background-image: url("small break red.jpg");
+	height: 10px;
+}
+
+#landAbout {
+	margin-top: -50px;
+}
+
+.landingContainer {
+	height: 100%;
+	width: 100%;
+}
+
+.landing {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 100px;
+	margin: -250px 0 0 -150px;
+}
+
+.landing p, .landing h1 {
+	text-align: center;
+}
+
+#hidden {
+	opacity: 0;
+}
+
+.aboutContainer {
+	height: 100%;
+}
+
+.about {
+	text-align: center;
+	position: relative;
+	top: 30%;
+	left: 50%;
+	width: 300px;
+	height: 200px;
+	margin: -100px 0 0 -150px;
+}
+
+.prometheusImage {
+	background-image: url("parchment.jpg");
+	height: 100px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	position: relative;
+}
+
+.madewithfingerContainer {
+	background-image: url("parchment.jpg");
+	height: 100%;
+}
+
+.madewithfinger {
+	top: 20%;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+	position: relative;
+	text-align: center;
+}
+
+.iecse8 {
+	background-image: url("body red.jpg");
+	height: 200px;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	position: relative;
+}
+
+.socialLinks {
+	height: 20px;
+}
+
+.facebook {
+	background-image: url("body red.jpg");
+	height: 30px;
+	width: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.madewithfinger p {
+	color: #192028;
+}
+
+.landingContainer, .aboutContainer, .madewithfingerContainer {
+	overflow-y: hidden;
+}
