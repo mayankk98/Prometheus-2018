@@ -15,6 +15,7 @@ html {
 
 body {
 	background-image: url("body red copy.jpg");
+	cursor: url("Blade Normal.cur"), auto;
 	height: 100%;
 	margin: 0;
 }
@@ -27,6 +28,10 @@ body {
 .break {
 	background-image: url("break copy red dark.jpg");
 	height: 52px;
+}
+
+.landingBottom {
+	border: 1px red solid;
 }
 
 .cracksBottom {
