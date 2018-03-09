@@ -42,6 +42,10 @@ body {
 	margin-top: -150px;
 }
 
+#gallerySponsor, #sponsorGallery {
+	margin-top: -50px;
+}
+
 .smallbreak {
 	background-image: url("small break red.jpg");
 	height: 10px;
@@ -156,7 +160,10 @@ body {
 .sponsorImages {
 	height: 420px;
 	width: 100%;
-	border: 1px red solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .row1, .row2 {
@@ -165,18 +172,73 @@ body {
 
 .sponsorimg {
 	background-image: url("parchment.jpg");
-	height: 40vw;
-	width: 40vw;
-	margin: 5px;
-	background-repeat: no-repeat;
-	display: inline-block;
+	max-width: 300px;
+	max-height: 300px;
+	width: 20vw;
+	height: 20vw;
+	margin: 100px;
+
 }
 
-.landingContainer, .aboutContainer, .madewithfingerContainer, .galleryContainer {
+@media screen and (max-width: 430px) {
+	.sponsorimg {
+		width: 160px;
+		height: 160px;
+		margin: 10px;
+	}
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1440px) {
+	.sponsorimg {
+		margin: 50px;
+
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.sponsorimg {
+		margin: 5px;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
+.sponsorsHead {
+	margin-top: -200px;
+}
+
+.landingContainer, .aboutContainer, .madewithfingerContainer, .sponsorContainer {
 	overflow-y: hidden;
 }
 
 /*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+/*ABHISHEK KI GALLERY*/
+
+.galleryHead {
+	text-align: center;
+	margin-top: -200px;
+}
 
 * {box-sizing: border-box;}
 #gallery 
@@ -186,7 +248,7 @@ font-family: Verdana, sans-serif;
  background-position: 50% 50%;
  background-repeat:   no-repeat;
   background-size:cover;
-
+  margin-top: 100px;
   }
 .mySlides {display: none;}
 /* img {vertical-align: middle;
@@ -201,9 +263,8 @@ height: 500px;
 	background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-	overflow: scroll;
+	overflow: hidden;
 	top:10%;
-	border: 1px red solid;
 	padding-left: 55px;
 	padding-right: 55px;
 }
@@ -323,7 +384,6 @@ height: 500px;
 	    background-size: cover;
 		overflow: hidden;
 		top: 20px;
-		border: 1px red solid;
 	}
 
 	#imgcont:first-child {
@@ -398,7 +458,6 @@ height: 500px;
 		background-position: 50% 50%;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-	    overflow-y: scroll;
 	}
 
 	#imgcont {
