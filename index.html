@@ -1,286 +1,248 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>Prometheus '18</title>
-	<link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-	<link rel="stylesheet" type="text/css" href="prom.css">
+	<title>Prometheus VII</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:700|Open+Sans:300" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/chrisma/birdman.js/gh-pages/birdman.js"></script>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
+	<script type="text/javascript">
+		$(function(){  // $(document).ready shorthand
+		  $('.monster').fadeIn('slow');
+		});
 
-	<div class="Nav">
-		<ul class="Nav">
-			<li>
-				<a href="#landing">
-					<div class="label">Landing</div>
-				</a>
-			</li>
-			<li>
-				<a href="#about">
-					<div class="label">About</div>
-				</a>
-			</li>
-			<li>
-				<a href="#events">
-					<div class="label">Events</div>
-				</a>
-			</li>
-			<li>
-				<a href="#gallery">
-					<div class="label">Gallery</div>
-				</a>
-			</li>
-			<li>
-				<a href="#contact">
-					<div class="label">Contact</div>
-				</a>
-			</li>
-		</ul>
+		$(document).ready(function() {
+		    /* Every time the window is scrolled ... */
+		    $(window).scroll( function(){
+		    
+		        /* Check the location of each desired element */
+		        $('#hidden').each( function(i){
+		            
+		            var bottom_of_object = $(this).position().top + $(this).outerHeight()/2;
+		            var bottom_of_window = $(window).scrollTop() + $(window).height();
+		            
+		            /* If the object is completely visible in the window, fade it it */
+		            if( bottom_of_window > bottom_of_object ){
+		                
+		                $(this).animate({'opacity':'1'},1500);
+		                    
+		            }
+		            
+		        }); 
+		    
+		    });
+
+		    var birdmanConfigLetters = {
+    				speedUp: true,
+    				method: 'letters',
+					delay: 400
+				}
+				var birdmanConfigLettersDelayed = {
+					speedUp: true,
+    				method: 'letters',
+					delay: 800
+  			}
+
+			$('#landingHead').birdman(birdmanConfigLettersDelayed);
+			$('#landingP').birdman(birdmanConfigLetters);
+		    
+		});
+	</script>
+	<div class = "landingContainer">
+		<div class="cracks"></div>
+		<div class="landing">
+			<p id="landingP">IECSE presents</p>
+			<h1 id="landingHead">Prometheus VII</h1>
+		</div>
 	</div>
-	<section id="landing">
-		<h1>Prometheus 2018</h1>
-		<div class="arrow bounce">
-			<i class="fa fa-chevron-down fa-2x"></i>
+	<div class="cracksBottom" id="landingBottom"></div>
+	<div class="break" id="landAbout"></div>
+	<div class="aboutContainer" id="hidden">
+		<div class="about">
+			<div class="prometheusImage"></div>
+			<h1>PROMETHEUS</h1>
+			<h3>The Seventh Expedition</h3>
+			<p>March 30th-40th</p>
+			<h3>REGISTRATIONS AND INFODESK AT KC</h3>
+			<p>Some Guy: +91 6969696969</p>
+			<p>Sidekick Boi: +91 2323232323</p>
 		</div>
-	</section>
+	</div>
+	<div class = "cracksBottom"></div>
+	<div class="smallbreak" id="landAbout"></div>
+	<div class="cracks"></div>
+	<div class = "galleryContainer">
+		<div class="galleryHead">
+			<h1>Gallery</h1>
+		</div>
+		<section id="gallery">
 
-	<section id="about">
-		<h1>About Prometheus</h1>
-	</section>
+			<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+			  		<div id="imgcont">
+			  			<img id="img2" src="img/1.jpg" style="object-fit:cover;overflow:hidden;">
+			  		</div>
+			  		<div id="imgcont">
+			  			<img id="img2" src="img/2.jpg" style="object-fit:cover;overflow:hidden;">
+			  		</div>
+			  		<div id="imgcont">
+			  			<img id="img2" src="img/3.jpg" style="object-fit:cover;overflow:hidden;">
+			  		</div>
+				  	<div id="imgcont2">
+				  		<img id="img2" src="img/4.jpg" style="object-fit:cover;overflow:hidden;">
+				  	</div>
+				  	<div id="imgcont2">
+				  		<img id="img2" src="img/5.jpg" style="object-fit:cover;overflow:hidden;">
+				  	</div>
+				  	<div id="imgcont2">
+				  		<img id="img2" src="img/6.jpg" style="object-fit:cover;overflow:hidden;">
+				  	</div>
+				</div>
 
-	<section id="events">
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 1</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 2</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 3</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 4</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 5</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 6</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-		<div class="event">
-			<div class="b-top-left"></div>
-			<div class="b-top"></div>
-			<div class="b-top-right"></div>
-			<div class="b-left"></div>
-			<div class="b-content">Event 7</div>
-			<div class="b-right"></div>
-			<div class="b-bottom"></div>
-		</div>
-	</section>
+				<div class="mySlides fade">
+					<div id="imgcont">
+						<img id="img2" src="img/7.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+						<img id="img2" src="img/8.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+					  	<img id="img2" src="img/9.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					  	<img id="img2" src="img/10.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					  	<img id="img2" src="img/11.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					 	<img id="img2" src="img/12.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+				</div>
+			  
+				<div class="mySlides fade">
+					<div id="imgcont">
+					  	<img id="img2" src="img/13.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+					  	<img id="img2" src="img/14.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+					  	<img id="img2" src="img/15.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					  	<img id="img2" src="img/16.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					  	<img id="img2" src="img/17.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+					  	<img id="img2" src="img/18.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+				</div>
+			  
+				<div class="mySlides fade" id="picturesContainer">
+					<div id="imgcont">
+						<img id="img2" src="img/19.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+						<img id="img2" src="img/20.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+						<img id="img2" src="img/21.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+						<img id="img2" src="img/22.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+						<img id="img2" src="img/23.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont2">
+						<img id="img2" src="img/25.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+				</div>
 
-	<section id="gallery">
+				<div class="mySlides fade">
+					<div id="imgcont">
+						<img id="img2" src="img/26.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+					<div id="imgcont">
+						<img id="img2" src="img/27.jpg" style="object-fit:cover;overflow:hidden;">
+					</div>
+				</div>
 
-		<div class="slideshow-container">
 
-			<div class="mySlides fade">
-				<div id="imgcont">
-					<img id="img2" src="img/1.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/2.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/3.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/4.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/5.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/6.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
-
-			<div class="mySlides fade">
-				<div id="imgcont">
-					<img id="img2" src="img/7.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/8.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/9.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/10.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/11.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/12.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
+			<br>
+			<div class = "locationContainer" style="text-align:center">
+				<span class="location"></span> 
+				<span class="location"></span> 
+				<span class="location"></span> 
+				<span class="location"></span> 
+				<span class="location"></span> 
 			</div>
-
-			<div class="mySlides fade">
-				<div id="imgcont">
-					<img id="img2" src="img/13.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/14.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/15.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/16.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/17.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/18.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div id="imgcont">
-					<img id="img2" src="img/19.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/20.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/21.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/22.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/23.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont2">
-					<img id="img2" src="img/25.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-			</div>
-
-			<div class="mySlides fade">
-				<div id="imgcont">
-					<img id="img2" src="img/26.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-				<div id="imgcont">
-					<img id="img2" src="img/27.jpg" style="object-fit:cover;overflow:hidden;">
-				</div>
-			</div>
-
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
-
-		<div style="text-align:center">
-			<span class="location"></span>
-			<span class="location"></span>
-			<span class="location"></span>
-			<span class="location"></span>
-			<span class="location"></span>
-		</div>
-	</section>
+		</section>
+	</div>
 	<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
 		function currentSlide(n) {
-			showSlides(slideIndex = n);
+		  showSlides(slideIndex = n);
 		}
 		function plusSlides(n) {
-			showSlides(slideIndex += n);
+		  showSlides(slideIndex += n);
 		}
-
 		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("location");
-			if (n > slides.length) { slideIndex = 1 }
-			if (n < 1) { slideIndex = slides.length }
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("location");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
 		}
-
 	</script>
-	<section id="contact">
-		<h2>Contact</h2>
-	</section>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script src="smooth_scroll.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$('#events').slick({
-				slidesToShow: 3,
-				centerMode: true,
-				responsive: [
-					{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 1
-						}
-					}
-				]
-			});
-		});
-	</script>
-
+	<div class = "cracksBottom"></div>
+	<div class="smallbreak" id="gallerySponsor"></div>
+	<div class="cracks"></div>
+	<div class = "sponsorsContainer">
+		<div class="sponsorsHead">
+			<h1>Sponsors</h1>
+		</div>
+		<div class="sponsorImages">
+			<div class="sponsorimg" id="sponsorimg1"></div>
+			<div class="sponsorimg" id="sponsorimg2"></div>
+			<div class="sponsorimg" id="sponsorimg3"></div>
+			<div class="sponsorimg" id="sponsorimg4"></div>
+			<div class="sponsorimg" id="sponsorimg5"></div>
+			<div class="sponsorimg" id="sponsorimg6"></div>
+		</div>
+	</div>
+	<div class = "cracksBottom"></div>
+	<div class="smallbreak" id="sponsorGallery"></div>
+	<div class="madewithfingerContainer">
+		<div class="madewithfinger">
+			<div class="iecse8"></div>
+			<p>Made with fingers (🖕) by IECSE</p>
+			<div class = "socialLinks">
+				<div class="facebook"><a href="#"></a></div>
+				<div class="facebook"><a href="#"></a></div>
+				<div class="facebook"><a href="#"></a></div>
+			</div>
+		</div>
+	</div>
 </body>
-
 </html>
