@@ -155,9 +155,8 @@ body {
 
 .sponsorImages {
 	height: 420px;
-	width: 620px;
+	width: 100%;
 	border: 1px red solid;
-	overflow: scroll;
 }
 
 .row1, .row2 {
@@ -166,13 +165,14 @@ body {
 
 .sponsorimg {
 	background-image: url("parchment.jpg");
-	height: 200px;
-	width: 200px;
+	height: 40vw;
+	width: 40vw;
 	margin: 5px;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
-.landingContainer, .aboutContainer, .madewithfingerContainer, .galleryContainer, .sponsorsContainer {
+.landingContainer, .aboutContainer, .madewithfingerContainer, .galleryContainer {
 	overflow-y: hidden;
 }
 
@@ -182,7 +182,6 @@ body {
 #gallery 
 {
 font-family: Verdana, sans-serif;
- background-image:url("backgal.jpg");
  border-radius:5px; 
  background-position: 50% 50%;
  background-repeat:   no-repeat;
@@ -202,7 +201,7 @@ height: 500px;
 	background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-	overflow: hidden;
+	overflow: scroll;
 	top:10%;
 	border: 1px red solid;
 	padding-left: 55px;
@@ -395,11 +394,11 @@ height: 500px;
 		width: 100%;
 		height: 700px;
 		position: relative;
-		margin-top: -150px;
+		margin-top: -90px;
 		background-position: 50% 50%;
 	    background-repeat: no-repeat;
 	    background-size: cover;
-		overflow: hidden;
+	    overflow-y: scroll;
 	}
 
 	#imgcont {
