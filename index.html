@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>Prometheus VII</title>
 	<link rel="stylesheet" href="main.css">
@@ -14,7 +13,6 @@
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 	<script type="text/javascript">
 		$(function () {  // $(document).ready shorthand
@@ -317,25 +315,25 @@
 		var slideIndex = 1;
 		showSlides(slideIndex);
 		function currentSlide(n) {
-			showSlides(slideIndex = n);
+		  showSlides(slideIndex = n);
 		}
 		function plusSlides(n) {
-			showSlides(slideIndex += n);
+		  showSlides(slideIndex += n);
 		}
 		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("location");
-			if (n > slides.length) { slideIndex = 1 }
-			if (n < 1) { slideIndex = slides.length }
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("location");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
 		}
 	</script>
 	<div class="cracksBottom"></div>
@@ -360,19 +358,12 @@
 		<div class="madewithfinger">
 			<div class="iecse8"></div>
 			<p>Made with fingers (🖕) by IECSE</p>
-			<div class="socialLinks">
-				<div class="facebook">
-					<a href="#"></a>
-				</div>
-				<div class="facebook">
-					<a href="#"></a>
-				</div>
-				<div class="facebook">
-					<a href="#"></a>
-				</div>
+			<div class = "socialLinks">
+				<div class="facebook"><a href="#"></a></div>
+				<div class="facebook"><a href="#"></a></div>
+				<div class="facebook"><a href="#"></a></div>
 			</div>
 		</div>
 	</div>
 </body>
-
 </html>
