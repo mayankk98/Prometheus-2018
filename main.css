@@ -46,6 +46,7 @@ body {
 	margin-top: -50px;
 }
 
+
 .smallbreak {
 	background-image: url("small break red.jpg");
 	height: 10px;
@@ -142,6 +143,7 @@ body {
 
 .galleryContainer {
 	width: 100%;
+	padding-top: 50px;
 }
 
 .madewithfinger p {
@@ -149,12 +151,9 @@ body {
 }
 
 .sponsorsContainer {
-	height: 100%;
+	min-height: 100%;
 	text-align: center;
-}
-
-.sponsorsHead {
-	margin-top: 50px;
+	padding-top: 50px;
 }
 
 .sponsorImages {
@@ -176,7 +175,7 @@ body {
 	max-height: 300px;
 	width: 20vw;
 	height: 20vw;
-	margin: 100px;
+	margin: 70px 70px 0 70px;
 
 }
 
@@ -185,6 +184,10 @@ body {
 		width: 160px;
 		height: 160px;
 		margin: 10px;
+	}
+
+	.crackSponsorGallery {
+		margin-top: -300px;
 	}
 
 }
