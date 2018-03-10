@@ -214,7 +214,7 @@ body {
 	margin-top: -200px;
 }
 
-.landingContainer, .aboutContainer, .madewithfingerContainer, .sponsorsContainer {
+.landingContainer, .aboutContainer, .madewithfingerContainer {
 	overflow-y: hidden;
 }
 
