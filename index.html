@@ -69,15 +69,16 @@
 	<div class="cracks"></div>
 	<div id="eventsContainer">
 		<div id="events">
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Aegon's Conquest</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
+				<div id="arrow1" class="right-arrow bounce"></div>
 				<div class="event-content">
 						The lands of Westeros have long been in chaos, consisting of quarrelsome kingdoms ruled by power hungry patriarchs with massive armies. Aegon Targaryen, the male scion of a once powerful house sets his eyes westwards, realizing the potential the kingdoms have to offer should they be united under a common ruler. Help Aegon, and his two sisters take the seven kingdoms with fire and blood. From the Stormlands to the Rock, from the Wall to King's Landing. But heed, for conquering is not an elementary task, this event will test your coding prowess over two rounds.
 				</div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Mystery Room</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -86,7 +87,7 @@
 						Teams of 3 or less will be allowed to participate.
 				</div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Online Coding</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -94,8 +95,9 @@
 						Here's your chance to become an equal to Poseidon, the God of the Seven Seas, defeating monsters and obstacles on the way with the wit and logic of your mind. The sail shall be treachaerous if you are not familiar with your art of code hence be careful of unexpected trouble.
 						So finesse your skills and get ready to conquer the Seven Seas !
 				</div>
+				<div id="arrow3" class="right-arrow bounce"></div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Artem</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -104,7 +106,7 @@
 						Bring out the saiyan in you and venture in your own journey of creativity with Shenron to collect 'them' all.
 				</div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Event</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -112,7 +114,7 @@
 					
 				</div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Event</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -120,7 +122,7 @@
 					
 				</div>
 			</div>
-			<div class="events">
+			<div class="event">
 				<img src="banner_top.svg">
 				<h2 class="event-title">Event</h2>
 				<img class="b-bottom" src="banner_bottom.svg">
@@ -131,6 +133,7 @@
 		</div>
 		<div class="cracksBottom"></div>
 		<script>
+			var changedOnce = false;
 			$(document).ready(function () {
 				$('#events').slick({
 					arrows: false,
@@ -144,6 +147,19 @@
 							}
 						}
 					]
+				});
+
+				$('#events').on('beforeChange', function(event, slick, currentSlide) {
+					if(!changedOnce && currentSlide == 0) {
+						$('.right-arrow').fadeOut('fast');
+						changedOnce = true;
+					}
+				});
+
+				$(window).resize(function() {
+					if(changedOnce) {
+						$('.right-arrow').hide();
+					}
 				});
 			});
 		</script>
