@@ -259,7 +259,7 @@ width:  1000px;
 height: 500px;
 } */
 .slideshow-container {
-	width:  1000px;
+	width:  1050px;
 	height:450px;
 	position: relative;
 	margin:auto;
@@ -362,7 +362,12 @@ height: 500px;
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
+#img2
+{
+	border-style: groove;
+		border-color: lavender;
+		border-width:20px;
+}
 @media only screen and (max-width: 0px) {
 	.text {font-size: 11px}
 	.prev, .next,.text {font-size: 11px}
@@ -372,7 +377,7 @@ height: 500px;
 }
 
 
-@media screen and (max-width: 1000px)
+/*@media screen and (max-width: 1000px)
 {
 	
 	.text {font-size: 11px }
@@ -412,15 +417,19 @@ height: 500px;
 		padding:10px;
 		border  : 3px ;
 		box-sizing: border-box;
+		border-style: groove;
+		border-color: lavender;
+		border-width:20px;
 	}
 }
-
+*/
 #img2 {
 	width:100%;
 	height:200px;
 	padding:10px;
 	border  : 3px ;
 	box-sizing: border-box;
+		
 }
 
 #img2:hover {
@@ -431,12 +440,16 @@ height: 500px;
 	width:290px;
 	height:217.5px;
 	display:inline-block;
+	margin-right:5px;
+	margin-left:5px;
 }
 #imgcont2 {
 	width:290px;
 	height:217.5px;
 	display:inline-block;
 	margin-top:10px;
+	margin-right:5px;
+	margin-left:5px;
 }
 @media screen and (min-width: 768px) {
 	#location1 {
@@ -461,8 +474,19 @@ height: 500px;
 		background-position: 50% 50%;
 	    background-repeat: no-repeat;
 	    background-size: cover;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		white-space: nowrap;
 	}
-
+	#picturesContainer{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		white-space: nowrap;
+	}
 	#imgcont {
 		width: 300px;
 		height: 200px;
@@ -470,6 +494,12 @@ height: 500px;
 		left: 50%;
 		margin-left: -150px;
 		position: relative;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		white-space: nowrap;
+		margin-bottom:20px;
 	}
 
 	#imgcont2 {
@@ -479,6 +509,8 @@ height: 500px;
 		height: 50%;
 		display: inline-block;
 		margin-top: 10px;
+		padding-bottom:10px;
+		margin-bottom:20px;
 	}
 	#img2 {
 		width: 300px;
@@ -492,58 +524,6 @@ height: 500px;
 		background-repeat:no-repeat;
 		background-position: 50% 50%;*/
 	}
-}
-.touchgallery {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	height: 100vh;
-	background: #eee;
-}
-      
-.touchgallery ul {
-	height: 100vh;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	position: absolute;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	transition: all 100ms ease-in-out;
-}
-      
-.touchgallery ul li{
-	width: 100vw;
-	height: 100vh;
-	float: left;
-	display: grid;
-	grid-template-rows: 4em 1fr 5em;
-	grid-template-columns: 4em 1fr 4em;
-}
-
-.top {
-	background-image: url("celtic-knot-top.svg")
-}
-
-.left {
-	background-image: url("celtic-knot-side.svg");
-	background-size: contain;
-	background-repeat: no-repeat round;
-}
-
-.right {
- 	background-image: url("celtic-knot-side.svg");
- 	background-repeat: no-repeat round;
-}
-
-.bottom {
-	grid-column: 1 / 4;
-}
-
-.center-event {
-	text-align: center;
-	font-size: 3em;
 }
 
 .Nav {
@@ -600,4 +580,95 @@ height: 500px;
     font-size: 1em;
     color: rgb(113,135,133);
     display: none;
+}
+
+#eventsContainer {
+	width: 100%;
+	height: 100%;
+	margin-top: -180px;
+}
+
+.slick-track {
+	height: 100vh;
+}
+
+.event {
+	display: grid;
+	position: relative;
+	grid-template-rows: 20% 30% 50%;
+	width: 100%;
+	height: 100vh;
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.b-top {
+}
+
+.event-title {
+	text-align: center;
+}
+
+.b-bottom {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	height: auto;
+}
+
+.event-content {
+	height: auto;
+	color: white;
+	text-align: justify;
+	margin-top: 20px;
+	padding: 0px 20px;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 40%;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	background-image: url("arrow.svg");
+	background-repeat: no-repeat;
+}
+
+#arrow3 {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+	.right-arrow {
+		width: 40px;
+		height: 40px;
+	}
+
+	#arrow1 {
+		display: none;
+	}
+
+	#arrow3 {
+		display: block;
+	}
+}
+
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30%);
+  }
+  60% {
+    transform: translateX(-10%);
+  }
+}
+
+.bounce {
+	animation: bounce 2s infinite;
 }
