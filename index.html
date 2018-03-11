@@ -6,6 +6,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Cinzel:700|Open+Sans:300" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdn.rawgit.com/chrisma/birdman.js/gh-pages/birdman.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -80,89 +83,107 @@
 	<div class = "cracksBottom"></div>
 	<div class="smallbreak" id="landAbout"></div>
 	<div class="cracks"></div>
-	<section id="events">
-        <div id="swipegallery" class="touchgallery">
-            <ul>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event-event">
-                        <span>Event 1</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event-event">
-                        <span>Event 2</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event-event">
-                        <span>Event 3</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event">
-                        <span>Event 4</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event">
-                        <span>Event 5</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event">
-                        <span>Event 6</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-                <li>
-                    <div class="top-left"></div>
-                    <div class="top"></div>
-                    <div class="top-right"></div>
-                    <div class="left"></div>
-                    <div class="center-event">
-                        <span>Event 7</span>
-                    </div>
-                    <div class="right"></div>
-                    <div class="bottom"></div>
-                </li>
-            </ul>
-        </div>
-    </section>
+	<section id="eventsContainer">
+		<div id="events">
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Aegon's Conquest</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div id="arrow1" class="right-arrow bounce"></div>
+				<div class="event-content">
+					The lands of Westeros have long been in chaos, consisting of quarrelsome kingdoms ruled by power hungry patriarchs with massive
+					armies. Aegon Targaryen, the male scion of a once powerful house sets his eyes westwards, realizing the potential the
+					kingdoms have to offer should they be united under a common ruler. Help Aegon, and his two sisters take the seven kingdoms
+					with fire and blood. From the Stormlands to the Rock, from the Wall to King's Landing. But heed, for conquering is not
+					an elementary task, this event will test your coding prowess over two rounds.
+				</div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Mystery Room</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+					Ever thought you were ratiocinative enough to outwit and dominate challenges or puzzles? Bring your intuitive skills and
+					best team together while stepping into Mystery Room in an attempt to locate the hints and resolve the crisis! From clues
+					hidden in the room to simple analytical based questions, these tests are sure to assess your out-of-the-box thinking
+					and teamwork skills alike. Teams of 3 or less will be allowed to participate.
+				</div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Online Coding</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+					Here's your chance to become an equal to Poseidon, the God of the Seven Seas, defeating monsters and obstacles on the way
+					with the wit and logic of your mind. The sail shall be treachaerous if you are not familiar with your art of code hence
+					be careful of unexpected trouble. So finesse your skills and get ready to conquer the Seven Seas !
+				</div>
+				<div id="arrow3" class="right-arrow bounce"></div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Artem</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+					Let your passion for graphic designing be put to test in this 2-day design event sponsored by The Souled Store. Bring out
+					the saiyan in you and venture in your own journey of creativity with Shenron to collect 'them' all.
+				</div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Event</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+				</div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Event</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+				</div>
+			</div>
+			<div class="event">
+				<img src="banner_top.svg">
+				<h2 class="event-title">Event</h2>
+				<img class="b-bottom" src="banner_bottom.svg">
+				<div class="event-content">
+				</div>
+			</div>
+		</div>
+		<div class="cracksBottom"></div>
+		<script>
+			var changedOnce = false;
+			$(document).ready(function () {
+				$('#events').slick({
+					arrows: false,
+					mobileFirst: true,
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+
+				$('#events').on('beforeChange', function (event, slick, currentSlide) {
+					if (!changedOnce && currentSlide == 0) {
+						$('.right-arrow').fadeOut('fast');
+						changedOnce = true;
+					}
+				});
+
+				$(window).resize(function () {
+					if (changedOnce) {
+						$('.right-arrow').hide();
+					}
+				});
+			});
+		</script>
+	</section>
     <div class = "cracksBottom"></div>
 	<div class="smallbreak" id="landAbout"></div>
 	<div class="cracks"></div>

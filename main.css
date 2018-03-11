@@ -495,64 +495,6 @@ height: 500px;
 	}
 }
 
-#events {
-	height: 100%;
-	width: 100%;
-}
-
-.touchgallery {
-	position: relative;
-	overflow-x: scroll;
-	height: 100%;
-}
-      
-.touchgallery ul {
-	height: 100%;
-	width: 100%;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	left: 0;
-	border: 1px red solid;
-	position: relative;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	transition: all 100ms ease-in-out;
-}
-      
-.touchgallery ul li{
-	width: 100%;
-	height: 100%;
-	float: left;
-	display: grid;
-	grid-template-rows: 4em 1fr 5em;
-	grid-template-columns: 4em 1fr 4em;
-}
-
-.top {
-	background-image: url("banner_top.svg")
-}
-
-.left {
-/*	background-image: url("celtic-knot-side.svg");
-	background-size: contain;
-	background-repeat: no-repeat round;*/
-}
-
-.right {
-/* 	background-image: url("celtic-knot-side.svg");
- 	background-repeat: no-repeat round;*/
-}
-
-.bottom {
-	/*grid-column: 1 / 4;*/
-}
-
-.center-event {
-	text-align: center;
-	font-size: 3em;
-}
-
 .Nav {
     position: fixed;
     top: 40%;
@@ -607,4 +549,93 @@ height: 500px;
     font-size: 1em;
     color: rgb(113,135,133);
     display: none;
+}
+
+#eventsContainer {
+	width: 100%;
+	height: 100%;
+	margin-top: -180px;
+}
+
+.slick-track {
+	height: 100vh;
+}
+
+.event {
+	display: grid;
+	position: relative;
+	grid-template-rows: 20% 30% 50%;
+	width: 100%;
+	height: 100vh;
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.b-top {
+}
+
+.event-title {
+	text-align: center;
+}
+
+.b-bottom {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	height: auto;
+}
+
+.event-content {
+	height: auto;
+	color: white;
+	text-align: justify;
+	margin-top: 20px;
+	padding: 0px 20px;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 40%;
+	right: 5px;
+	width: 30px;
+	height: 30px;
+	background-image: url("arrow.svg");
+	background-repeat: no-repeat;
+}
+
+#arrow3 {
+	display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+	.right-arrow {
+		width: 40px;
+		height: 40px;
+	}
+
+	#arrow1 {
+		display: none;
+	}
+
+	#arrow3 {
+		display: block;
+	}
+}
+
+@keyframes bounce-right {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(-30%);
+	}
+	60% {
+		transform: translateX(-10%);
+	}
+}
+
+.bounce {
+	animation: bounce-right 2s infinite;
 }
