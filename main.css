@@ -576,6 +576,8 @@ height: 500px;
 }
 
 .b-top {
+	width: 95%;
+	margin: auto;
 }
 
 .event-title {
