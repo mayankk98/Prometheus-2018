@@ -621,11 +621,11 @@ height: 500px;
 
 .event-logo {
 	position: absolute;
-	top: 52%;
+	top: 52.5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 43%;
-	max-width: 43%;
+	width: 77%;
+	max-width: 77%;
 	border-radius: 50%;
 }
 
