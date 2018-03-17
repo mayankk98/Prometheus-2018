@@ -14,19 +14,22 @@ html {
 }
 
 body {
-	background-image: url("body red copy.jpg");
+	/*background-image: url("body red copy.jpg");*/
+	background-image: url("body.jpg");
 	cursor: url("Blade Normal.cur"), auto;
 	height: 100%;
 	margin: 0;
 }
 
 .cracks {
-	background-image: url("top red.jpg");
+	/*background-image: url("top red.jpg");*/
+	background-image: url("top.jpg");
 	height: 200px;
 }
 
 .break {
-	background-image: url("break copy red dark.jpg");
+	/*background-image: url("break copy red dark.jpg");*/
+	background-image: url("break.jpg");
 	height: 52px;
 }
 
@@ -35,7 +38,8 @@ body {
 }
 
 .cracksBottom {
-	background-image: url("crackbottomred.jpg");
+	/*background-image: url("crackbottomred.jpg");*/
+	background-image: url("crackbottom.jpg");
 	height: 200px;
 	width: 100%;
 	background-repeat: repeat-x;
@@ -48,7 +52,8 @@ body {
 
 
 .smallbreak {
-	background-image: url("small break red.jpg");
+	/*background-image: url("small break red.jpg");*/
+	background-image: url("small_break.png");
 	height: 10px;
 }
 
