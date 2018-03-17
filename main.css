@@ -120,7 +120,7 @@ body {
 }
 
 .iecse8 {
-	background-image: url("body red.jpg");
+	background-image: url("iecse.jpg");
 	height: 200px;
 	width: 200px;
 	left: 50%;
@@ -133,7 +133,9 @@ body {
 }
 
 .facebook {
-	background-image: url("body red.jpg");
+	background-image: url("facebook.png");
+	background-position: center;
+	background-size: cover;
 	height: 30px;
 	width: 30px;
 	margin-left: 5px;
@@ -155,6 +157,15 @@ body {
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	padding-top: 200px;
+	align-items: center;
+	margin-top: -150px;
+}
+
+.sponsorsHead {
+	height: 100px;
+	text-align: center;
+	margin-top: 200px;
 }
 
 .sponsorImages {
@@ -164,6 +175,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: -50px;
 }
 
 .row1, .row2 {
@@ -171,13 +183,21 @@ body {
 }
 
 .sponsorimg {
-	background-image: url("parchment.jpg");
 	max-width: 300px;
 	max-height: 300px;
 	width: 20vw;
 	height: 20vw;
 	margin: 70px 70px 0 70px;
+	background-size: cover;
+	background-position: center;
+}
 
+#sponsorimg1 {
+	background-image: url("github.png");
+}
+
+#sponsorimg2 {
+	background-image: url("souledStore.png");
 }
 
 @media screen and (max-width: 430px) {
@@ -214,7 +234,7 @@ body {
 	margin-top: -200px;
 }
 
-.landingContainer, .aboutContainer, .madewithfingerContainer {
+.landingContainer, .aboutContainer, .madewithfingerContainer, .sponsorsContainer {
 	overflow-y: hidden;
 }
 
