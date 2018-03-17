@@ -36,6 +36,7 @@ body {
     position: relative;
     padding: 3px;
     padding-left: 35%;
+    margin-top: 280%;
 }
 
 .Nav ul li{
@@ -180,11 +181,11 @@ body {
 
 .prometheusImage {
 	background-image: url("mainLogoNoText.png");
-	height: 500px;
-	width: 500px;
+	height: 300px;
+	width: 300px;
 	background-size: cover;
 	background-position: center;
-	left: 50%;
+	left: 83%;
 	margin-left: -250px;
 	position: relative;
 }
