@@ -226,8 +226,7 @@ body {
 	height: 20px;
 }
 
-.facebook {
-	background-image: url("facebook.png");
+.social {
 	background-position: center;
 	background-size: cover;
 	height: 30px;
@@ -235,6 +234,18 @@ body {
 	margin-left: 5px;
 	margin-right: 5px;
 	display: inline-block;
+}
+
+#facebook {
+	background-image: url("facebook.png");
+}
+
+#twitter {
+	background-image: url("twitter.png");
+}
+
+#youtube {
+	background-image: url("youtube.png");
 }
 
 #galleryTop {
