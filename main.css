@@ -93,7 +93,7 @@ body {
 }
 
 #landingBottom {
-	margin-top: -200px;
+	margin-top: -150px;
 }
 
 .cracksBottom {
@@ -127,15 +127,24 @@ body {
 
 .landing {
 	position: relative;
-	top: 75%;
+	top: 50%;
 	left: 50%;
 	width: 300px;
-	height: 100px;
-	margin: -300px 0 0 -150px;
+	height: 500px;
+	margin: -450px 0 0 -150px;
 }
 
 .landing p, .landing h1 {
 	text-align: center;
+}
+
+#mainLogo {
+	height: 300px;
+	width: 300px;
+	background-image: url("mainLogo.png");
+	background-position: center;
+	background-size: cover;
+	align-items: center;
 }
 
 #hidden {
@@ -144,6 +153,12 @@ body {
 
 .aboutContainer {
 	height: 100%;
+	background-image: url("bg-assets/body red copy.jpg");
+	padding-bottom: 200px;
+}
+
+#redCrack {
+	background-image: url("bg-assets/top red.jpg");
 }
 
 .landingBottom {
@@ -156,14 +171,20 @@ body {
 	top: 25%;
 	left: 50%;
 	width: 300px;
-	height: 200px;
-	margin: -100px 0 0 -150px;
+	border: 1px red solid;
+	margin: -250px 0 0 -150px;
+}
+
+#aboutBottom {
+	background-image: url("bg-assets/crackbottomred.jpg");
 }
 
 .prometheusImage {
-	background-image: url("bg-assets/parchment.jpg");
+	background-image: url("mainLogo.png");
 	height: 100px;
 	width: 100px;
+	background-size: cover;
+	background-position: center;
 	left: 50%;
 	margin-left: -50px;
 	position: relative;
@@ -184,7 +205,9 @@ body {
 }
 
 .iecse8 {
-	background-image: url("iecse.jpg");
+	background-image: url("iecse.png");
+	background-position: center;
+	background-size: cover;
 	height: 200px;
 	width: 200px;
 	left: 50%;
@@ -207,8 +230,17 @@ body {
 	display: inline-block;
 }
 
+#galleryTop {
+	background-image: url("bg-assets/top red.jpg") !important;
+}
+
+#galleryBottom {
+	background-image: url("bg-assets/crackbottomred.jpg");
+}
+
 .galleryContainer {
 	width: 100%;
+	background-image: url("bg-assets/body red copy.jpg");
 	padding-top: 50px;
 }
 
@@ -217,7 +249,7 @@ body {
 }
 
 .sponsorsContainer {
-	min-height: 100%;
+	/*min-height: 100%;*/
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -239,7 +271,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: -50px;
+	margin-top: -100px;
 }
 
 .row1, .row2 {
@@ -585,7 +617,7 @@ height: 500px;
 #eventsContainer {
 	width: 100%;
 	height: auto;
-	margin-top: -190px;
+	margin-top: -150px;
 }
 
 .slick-track {
@@ -598,6 +630,8 @@ height: 500px;
 	grid-template-rows: 20% 30% 50%;
 	width: 100%;
 	height: auto;
+	align-items: center;
+	justify-content: center;
 }
 
 .slick-slide:focus {
@@ -605,7 +639,7 @@ height: 500px;
 }
 
 .b-top {
-	width: 95%;
+	width: 70%;
 	margin: auto;
 }
 
@@ -615,9 +649,29 @@ height: 500px;
 }
 
 .b-bottom-wrapper {
-	width: 100%;
+	width: 250px;
 	display: inline-block;
 	position: relative;
+	margin-left: 28%;
+}
+
+@media screen and (max-width: 430px) {
+	.b-bottom-wrapper {
+		margin-left: 81px;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 1440px) {
+	.b-bottom-wrapper {
+		margin-left: 275px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.b-bottom-wrapper {
+		width: 150px;
+		margin-left: 85px;
+	}
 }
 
 .b-bottom {
@@ -641,7 +695,7 @@ height: 500px;
 .event-content {
 	height: auto;
 	color: white;
-	text-align: justify;
+	text-align: center;
 	margin-top: 20px;
 	padding: 0px 20px;
 }
@@ -649,7 +703,7 @@ height: 500px;
 .right-arrow {
 	position: absolute;
 	top: 47%;
-	right: 5px;
+	right: -50px;
 	transform: translate(0, -50%);
 	width: 30px;
 	height: 30px;
