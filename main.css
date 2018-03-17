@@ -20,6 +20,65 @@ body {
 	margin: 0;
 }
 
+/*****NavBar*****/
+
+.Nav {
+    position: fixed;
+    top: 10%;
+    left: 90%;
+    width: 50px;
+    z-index: 9999;
+    list-style-type: none;
+}
+
+.Nav ul {
+    position: relative;
+    padding: 3px;
+    padding-left: 35%;
+}
+
+.Nav ul li{
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 35%;
+    color: rgb(113,135,133);
+}
+
+.Nav a{
+    display: block;
+    width: 8px;
+    height: 8px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: white;
+    text-decoration: none;
+}
+
+.Nav a:hover{
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+}
+
+.Nav a.active{
+    border-radius: 50%;
+    background-color: white;
+    text-decoration: none;
+}
+
+.label {
+    font-family: 'Cinzel', cursive;
+	color: white;
+    position: relative;
+    top: -60%;
+    left: -200%;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8em;
+    display: none;
+}
+
 .cracks {
 	background-image: url("top red.jpg");
 	height: 200px;
@@ -63,7 +122,7 @@ body {
 
 .landing {
 	position: relative;
-	top: 50%;
+	top: 75%;
 	left: 50%;
 	width: 300px;
 	height: 100px;
@@ -495,61 +554,6 @@ height: 500px;
 	}
 }
 
-.Nav {
-    position: fixed;
-    top: 40%;
-    left: 90%;
-    width: 50px;
-    z-index: 9999;
-    list-style-type: none;
-}
-
-.Nav ul {
-    position: relative;
-    padding: 3px;
-    padding-left: 35%;
-}
-
-.Nav ul li{
-    position: relative;
-    padding-bottom: 20px;
-    padding-left: 35%;
-    color: rgb(113,135,133);
-}
-
-.Nav a{
-    display: block;
-    width: 8px;
-    height: 8px;
-    text-indent: -9999px;
-    border-radius: 50%;
-    border: 2px solid;
-    border-color: rgb(113,135,133);
-    text-decoration: none;
-}
-
-.Nav a:hover{
-    border-radius: 50%;
-    background-color: rgb(255,135,133);
-    text-decoration: none;
-}
-
-.Nav a.active{
-    border-radius: 50%;
-    background-color: rgb(207,219,218);
-    text-decoration: none;
-}
-
-.label {
-    position: relative;
-    top: -60%;
-    left: -200%;
-    width: 100%;
-    text-align: right;
-    font-size: 1em;
-    color: rgb(113,135,133);
-    display: none;
-}
 
 /*********** Events ***********/
 
