@@ -101,7 +101,7 @@ body {
 }
 
 .redBreak {
-	background-image: url("bg-assets/break copy red dark.jpg");
+	background-image: url("bg-assets/break copy blue dark.jpg");
 	height: 52px;
 }
 
@@ -202,7 +202,7 @@ body {
 
 .aboutContainer {
 	height: 100%;
-	background-image: url("bg-assets/parchment.jpg");
+	background-image: url("bg-assets/body red copy.jpg");
 	padding: 50px;
 	min-height: 100%;
 }
@@ -223,7 +223,7 @@ body {
 }
 
 .about h1, .about h3, .about p {
-	color: black;
+	color: white;
 }
 
 #aboutBottom {
@@ -232,6 +232,7 @@ body {
 
 #contacts {
 	margin-top: -55%;
+	
 
 }
 
@@ -272,7 +273,7 @@ body {
 }
 
 .madewithfingerContainer {
-	background-image: url("bg-assets/body red copy.jpg");
+	background-image: url("bg-assets/body blue copy.jpg");
 	height: 100%;
 	overflow-y: hidden;
 }
@@ -447,6 +448,13 @@ body {
     width: 400px;
     margin-left: -17%;
     margin-top: 37%;
+}
+.introText {
+	font-size: 1em;
+	margin-top: -5%;
+}
+.introHead {
+	margin-top: -50%;
 }
 }
 
