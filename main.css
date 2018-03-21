@@ -167,15 +167,13 @@ body {
 	height: 100%;
 	background-image: url("bg-assets/parchment.jpg");
 	padding: 50px;
+	min-height: 100%;
 }
 
 #redCrack {
 	background-image: url("bg-assets/top red.jpg");
 }
 
-.landingBottom {
-
-}
 
 .about {
 	text-align: center;
@@ -195,6 +193,11 @@ body {
 	background-image: url("bg-assets/crackbottomred.jpg");
 }
 
+#contacts {
+	margin-top: -8%;
+
+}
+
 .prometheusImage {
 	background-image: url("mainLogoNoText.png");
 	height: 295px;
@@ -203,6 +206,7 @@ body {
 	background-position: center;
 	left: 50%;
 	margin-left: -150px;
+	margin-top: 12%;
 	position: relative;
 }
 
@@ -284,6 +288,7 @@ body {
 	background-image: url("bg-assets/crackbottomred.jpg");
 }
 
+
 .galleryContainer {
 	width: 100%;
 	background-image: url("bg-assets/body red copy.jpg");
@@ -311,13 +316,16 @@ body {
 }
 
 .sponsorImages {
-	height: 420px;
+	height: 100%;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-top: -100px;
+	margin-top: -5vh;
+	font-size: 5vh;
+	font-color: #ffffff;
+	/*font-family: 'Open Sans', sans-serif;*/
 }
 
 .row1, .row2 {
@@ -329,30 +337,56 @@ body {
 	max-height: 300px;
 	width: 20vw;
 	height: 20vw;
-	margin: 70px 70px 0 70px;
+	margin: 10px 70px 0 70px;
 	background-size: cover;
 	background-position: center;
 }
 
+.sponsorname {
+	color: #ffffff;
+	margin-top: -10%;
+	font-size: 20px;
+}
+
 #sponsorimg1 {
-	background-image: url("github.png");
+	background-image: url("DO.png");
 }
 
 #sponsorimg2 {
-	background-image: url("souledStore.png");
+	background-image: url("GitHub.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
+
+#sponsorimg3 {
+	background-image: url("jetbrains.png");
+}
+
+#sponsorimg4 {
+	background-image: url("McD.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#sponsorimg5 {
+	background-image: url("souledStore.png");
+
+}
+
 
 @media screen and (max-width: 430px) {
 	.sponsorimg {
 		width: 160px;
 		height: 160px;
-		margin: 10px;
+		margin: 60px;
 	}
 
 	.crackSponsorGallery {
 		margin-top: -300px;
 	}
 
+	.sponsorname {
+		margin-top: -10vh;
+	}
 }
 
 @media screen and (min-width: 800px) and (max-width: 1440px) {
@@ -378,6 +412,7 @@ body {
 
 .landingContainer, .aboutContainer, .madewithfingerContainer, .sponsorsContainer {
 	overflow-y: hidden;
+	min-height: 100%;
 }
 
 /*ABHISHEK KI GALLERY*/
