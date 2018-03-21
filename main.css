@@ -1,3 +1,6 @@
+
+
+
 h1, h2, h3 {
 	font-family: 'Cinzel', cursive;
 	color: white;
@@ -115,8 +118,42 @@ body {
 	margin-top: -150px;
 }
 
+
+/*Intro*/
+
+#intro {
+   	width: 100%;
+    background-image: url("bg-assets/body red copy.jpg");
+	height: 100%;
+	overflow-y: hidden;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introHead {
+ 
+ color: #EEE;
+ text-align: center;
+ margin-top: -14%;
+ font-size: 2em;
+}
+.introText {
+ color: #EEE;
+ width: 80%;
+ margin-top: 20%;
+ font-size: 1.5em;
+ margin: 0 auto;
+ text-align: center;
+ font-family: 'Open Sans', sans-serif;
+ 
+}
+
+/*------------------------------*/
 #gallerySponsor, #sponsorGallery {
 	margin-top: -50px;
+}
+.galleryHead {
+	margin-top: -5%;
 }
 
 
@@ -194,32 +231,44 @@ body {
 }
 
 #contacts {
-	margin-top: -8%;
+	margin-top: -55%;
 
 }
 
 .prometheusImage {
-	background-image: url("mainLogoNoText.png");
-	height: 295px;
+	background-image: url("goldlogo.png");
+	height: 600px;
 	width: 300px;
 	background-size: cover;
 	background-position: center;
-	left: 50%;
+	left: 40%;
 	margin-left: -150px;
-	margin-top: 12%;
+	margin-top: -146%;
 	position: relative;
 }
 
 @media screen and (max-width: 430px) {
 	.prometheusImage {
-		height: 295px;
-		width: 300px;
-		margin-left: -150px;
+		height: 80%;
+		width: 100%;
+		margin-left: -144px;
+		margin-top: -142%;
 	}
 
 	.aboutContainer {
 		margin-bottom: 250px;
 	}
+
+	#contacts {
+		margin-top: -40%;
+	}
+	#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -17%;
+    margin-top: 37%;
+}
 }
 
 .madewithfingerContainer {
@@ -293,6 +342,8 @@ body {
 	width: 100%;
 	background-image: url("bg-assets/body red copy.jpg");
 	padding-top: 50px;
+	min-height: 100%;
+	margin-top: -4%;
 }
 
 .madewithfinger p {
@@ -387,6 +438,16 @@ body {
 	.sponsorname {
 		margin-top: -10vh;
 	}
+	.galleryContainer {
+		margin-top: -20%;
+	}
+	#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -17%;
+    margin-top: 37%;
+}
 }
 
 @media screen and (min-width: 800px) and (max-width: 1440px) {
@@ -394,6 +455,15 @@ body {
 		margin: 50px;
 
 	}
+	
+	#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -17%;
+    margin-top: 37%;
+}
+}
 
 }
 
@@ -403,6 +473,20 @@ body {
 		width: 100px;
 		height: 100px;
 	}
+	#movie {
+	align-content: center;
+	height: 400px;
+	width: 600px;
+	margin-left: 50%;
+	margin-top: 10%;
+}
+#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -17%;
+    margin-top: 37%;
+}
 }
 
 
@@ -438,7 +522,6 @@ body {
 
 .galleryHead {
 	text-align: center;
-	margin-top: -200px;
 }
 
 * {box-sizing: border-box;}
@@ -467,6 +550,14 @@ height: 500px;
 	top:10%;
 	padding-left: 55px;
 	padding-right: 55px;
+}
+
+#movie {
+	align-content: center;
+	height: 400px;
+	width: 600px;
+	margin-left: 50%;
+	margin-top: 10%;
 }
 
 .text {
@@ -610,6 +701,14 @@ height: 500px;
 		border  : 3px ;
 		box-sizing: border-box;
 	}
+
+	#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -17%;
+    margin-top: 37%;
+}
 }
 
 #img2 {
@@ -639,6 +738,13 @@ height: 500px;
 	#location1 {
 		visibility: hidden;
 	}
+	#movie {
+	align-content: center;
+    height: 395px;
+    width: 703px;
+    margin-left: 37%;
+    margin-top: 17%;
+}
 }
 
 @media screen and (max-width: 612px) {
@@ -689,6 +795,14 @@ height: 500px;
 		background-repeat:no-repeat;
 		background-position: 50% 50%;*/
 	}
+
+	#movie {
+	align-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: -11%;
+    margin-top: 37%;
+}
 }
 
 
@@ -702,6 +816,14 @@ height: 500px;
 
 .slick-track {
 	height: auto;
+
+}
+
+.eventsHead {
+	text-align: center;
+	font-size: 2em;
+	margin-top: -18%;
+
 }
 
 .event {

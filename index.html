@@ -38,7 +38,7 @@
 		            /* If the object is completely visible in the window, fade it it */
 		            if( bottom_of_window > bottom_of_object ){
 		                
-		                $(this).animate({'opacity':'1'},1500);
+		                $(this).animate({'opacity':'1'},500);
 		                    
 		            }
 		            
@@ -49,12 +49,12 @@
 		    var birdmanConfigLetters = {
     				speedUp: true,
     				method: 'letters',
-					delay: 400
+					delay: 200
 				}
 				var birdmanConfigLettersDelayed = {
 					speedUp: true,
     				method: 'letters',
-					delay: 800
+					delay: 400
   			}
 
 			$('#landingHead').birdman(birdmanConfigLettersDelayed);
@@ -101,10 +101,33 @@
 			<p id="landingP">Presented by IECSE</p>
 		</div>
 	</div>
+
+	<div id="intro">
+		<div class="cracks" id="redCrack"></div>
+		<div class="introHead">
+			<h1>About</h1>
+		</div>
+		<div class='introText'>
+			Prometheus is the annual Technical Fest of IECSE. 
+			This is the seventh time the fest will be organized by the club. 
+			The technical extravaganza will begin on the 23rd of March and will continue till the 25th.
+			We have planned seven events for Prometheus VII which includes both technical and non technical competitions. 
+			In the previous years we have seen participation in mass numbers in all events and we expect an even greater turn up this time.
+			<br><br>
+			<div class="highlight">It's 'The Seventh Expedition' this time. So as we say,<br>
+			Let the games begin!</div>
+		</div>
+	</div>
 	<!-- <div class = "cracksBottom"></div> -->
 	<div class="break" id="landAbout"></div>
 	<div class="cracks"></div>
+	
+	
+		
 	<section id="eventsContainer">
+		<div class="eventsHead">
+			<h1>Events</h1>
+		</div>
 		<div id="events">
 			<div class="event">
 				<img class="b-top" src="banner_top.svg">
@@ -240,6 +263,15 @@
 
 			<div class="slideshow-container">
 				
+
+				<div class="mySlides fade">
+					<div id="imgcont">
+						<video id= "movie" width="320" height="240" controls>
+						<source src="aftermovie.mp4" type="video/mp4" >		
+						</video>
+					</div>
+				</div>
+
 				<div class="mySlides fade">
 			  		<div id="imgcont">
 			  			<img id="img2" src="img/1.jpg" style="object-fit:cover;overflow:hidden;">
@@ -324,14 +356,6 @@
 					</div>
 				</div>
 
-				<div class="mySlides fade">
-					<div id="imgcont">
-						<img id="img2" src="img/26.jpg" style="object-fit:cover;overflow:hidden;">
-					</div>
-					<div id="imgcont">
-						<img id="img2" src="img/27.jpg" style="object-fit:cover;overflow:hidden;">
-					</div>
-				</div>
 
 
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -394,7 +418,7 @@
 		<div class="about">
 			<div class="prometheusImage"></div>
 			<div id="contacts">
-				<h1>PROMETHEUS</h1>
+				
 				<h3>The Seventh Expedition</h3>
 				<p>March 23rd-25th</p>
 				<h3>REGISTRATIONS AND INFODESK AT KC</h3>
