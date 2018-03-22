@@ -39,5 +39,10 @@
         	$('.Nav ul li a').click(function () {
 			$('.Nav ul li a').removeClass('active');
 				$(this).addClass('active');
-		});   
+		}); 
+
+    $('.modal_open, .modal_close').click(function(e){
+  e.preventDefault();
+  $('.modal').toggleClass('active');
+});  
 	});
