@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript" src="smooth_scroll.js"></script>
+	<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -101,16 +102,28 @@
 			<p>Presented by IECSE</p>
 		</div>
 
+	<h4 class="modal_open" id="b1">Click to Register</h4>
 
-		<h4 class="modal_open" id="b1">Click to Register</h4>
-		<div class="modal">
-			<div class="modal_overlay">
-				<div class="inner">
-					<h1>Registration</h1>
-					<h4 class="modal_close" id="b2">Submit</h4>
-				</div>
+	<div class="modal">
+		<div class="modal_overlay">
+			<div class="inner">
+				<h1>Registration</h1>
+				<form id="form" action="submit.html" method="post" target="blank">			
+					<br>Name :*<br>
+					<input type="text" name="firstname" placeholder="Name" required ><br><br>
+					Email :*<br>
+					<input type="email" name="email" placeholder="Email" required><br><br>
+					Phone Number :*<br>
+					<input type="text" pattern="[0-9]{5}[-][0-9]{7}[-][0-9]{1}" required><br><br>
+					Registration Number :*<br>
+					<input type="text" maxlength="9" required><br><br>
+					<div class="g-recaptcha" data-sitekey="6LeuUk4UAAAAAD2Mcp1oziWN1YS7xON-mBwRlZgh"></div>
+					<h4 type="submit" value="Submit" class="modal_close">
+				</form>
+				
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="redbreak"></div>
 	<div id="intro">
@@ -261,6 +274,10 @@
 					}
 				});
 			});
+
+				function submit(){
+					document.getElementById()
+				}
 		</script>
 	</section>
     <div class = "cracksBottom"></div>
