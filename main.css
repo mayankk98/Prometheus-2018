@@ -1,5 +1,18 @@
 
+@font-face {
+    font-family: Antique Book Cover;
+    src: url('antique_book_cover.otf');
+}
 
+@font-face {
+    font-family: orkney regular;
+    src: url('orkney.regular.otf');
+}
+
+@font-face {
+    font-family: orkney medium;
+    src: url('orkney.medium.otf');
+}
 
 h1, h2, h3 {
 	font-family: 'Cinzel', cursive;
@@ -100,6 +113,12 @@ body {
 	height: 52px;
 }
 
+.redbreak {
+	background-image: url("bg-assets/break copy red dark.jpg");
+	height: 52px;
+}
+
+
 .redBreak {
 	background-image: url("bg-assets/break copy blue dark.jpg");
 	height: 52px;
@@ -187,6 +206,12 @@ body {
 	color: black;
 }
 
+.landing h1 {
+	font-family: Antique Book Cover;
+	font-size: 3.5em;
+	font-weight: 600;
+    letter-spacing: .03em;
+}
 #mainLogo {
 	height: 295px;
 	width: 300px;
@@ -226,12 +251,16 @@ body {
 	color: white;
 }
 
+.about p {
+	margin-top: -5%;
+} 
+
 #aboutBottom {
 	background-image: url("bg-assets/crackbottomred.jpg");
 }
 
 #contacts {
-	margin-top: -55%;
+	margin-top: -45%;
 	
 
 }
@@ -244,7 +273,7 @@ body {
 	background-position: center;
 	left: 40%;
 	margin-left: -150px;
-	margin-top: -146%;
+	margin-top: -138%;
 	position: relative;
 }
 
@@ -412,6 +441,7 @@ body {
 
 #sponsorimg3 {
 	background-image: url("jetbrains.png");
+
 }
 
 #sponsorimg4 {
