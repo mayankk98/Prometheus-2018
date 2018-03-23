@@ -37,7 +37,9 @@
 					alert("A qr code has been mailed to you");
 				} else {
 					console.log(data.message);
+					alert("Some error has occurred, please try again.");
 				}
+				window.location.href = "index.html";
 			});
 		}
 	</script>
