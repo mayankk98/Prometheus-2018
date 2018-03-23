@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prometheus 2018 Registrations</title>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 id"formtitle">Prometheus VII </h1>
+	<h4> Registration Form</h4>
+	<form id="form" action="javascript:submitted()">
+		<label for="name">Name:</label><br>
+		<input type="text" name="name" id="name" required><br><br>
+		<br>
+		<label for="mobile">Mobile Number:</label><br>
+		<input type="text" name="mobile" id="" required><br><br>
+		<br>
+		<label for="regno">Registration Number:</label><br>
+		<input type="text" name="regno" required><br><br>
+		<br>
+		<label for="email">Email:</label><br>
+		<input type="email" name="email" required><br><br>
+		<br>
+		<div class="g-recaptcha" data-sitekey="6LeuUk4UAAAAAD2Mcp1oziWN1YS7xON-mBwRlZgh"></div>
+		<input type="submit" name="submit" value="Submit" id="submitbtn">
+	</form>
+	<script type="text/javascript">
+		function submitted(){
+			var umappedArr = $("#form").serializeArray();
+			var postData = {};
+			$.map(umappedArr, function(n,i){
+				postData[n['name']] = n['value'];
+			});
+			console.log(postData);
+			$.post('https://api.iecsemanipal.com/sendEmail',postData,function(data){
+				if(data.status==1){
+					alert("A qr code has been mailed to you");
+				} else {
+					console.log(data.message);
+				}
+			});
+		}
+	</script>
+	<style type="text/css">
+		@font-face {
+	    font-family: Antique Book Cover;
+	    src: url('antique_book_cover.otf');
+	}
+		body {
+			background-image: url("bg-assets/parchment.jpg");
+			text-align: center;
+			font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	
+		}
+		form {
+			color: black;
+			text-align: center;
+			margin-top: -3%;
+					}
+		.g-recaptcha{
+			margin-left: 38%;
+		}
+		input {
+
+		}
+		h1, h4{
+			font-family: Antique Book Cover;
+			font-size: 3.5em;
+			font-weight: 600;
+		    letter-spacing: .05em;
+		    text-align: center;
+		}
+		h4 {
+			font-size: 2em;
+			}
+
+		#submitbtn {
+			background: rgba(255,255,255,.2);
+			border-radius: 40px;
+			cursor: pointer;
+			display: inline-block;
+			padding: 10px 40px;
+			font-family: 'Raleway', Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			margin-top: 2%;
+
+			
+		}
+	</style>
+</body>
+</html>

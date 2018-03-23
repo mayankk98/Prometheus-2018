@@ -152,14 +152,18 @@ body {
 	width: 100%;
 }
 
+
 .input {
 	padding: 10%;
 }
 
 #b1 {
-	margin-top: 22%;
-	margin-left: 42.5%;
+	
+	margin-top: 20%;
+    margin-left: 30.5%;
+    color: black;
 }
+
 .modal_open,
 .modal_close {
 	background: rgba(255,255,255,.2);
@@ -582,7 +586,7 @@ body {
 #b1 {
 	
 	margin-top: 70%;
-    margin-left: 23%;
+    margin-left: 3%;
 }
 }
 
